@@ -27,6 +27,7 @@ body header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  box-shadow: 0 10px 6px -6px #777;
 }
 body header section.logo {
   flex: 2 1 400px;
@@ -183,5 +184,13 @@ body footer section.links a img {
   body footer section.logo img {
     width: 40vh;
     height: 40vh;
+  }
+}
+@media screen and (min-width: 700px) {
+  body header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
   }
 }/*# sourceMappingURL=style.css.map */
