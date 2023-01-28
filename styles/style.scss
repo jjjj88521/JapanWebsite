@@ -61,6 +61,7 @@ header {
 }
 
 main {
+  //背景圖片
   section.background-img {
     // border: 3px solid black;
     // 設定背景圖片
@@ -90,6 +91,42 @@ main {
       font-size: 2.5rem;
       color: white;
       text-align: center;
+    }
+  }
+
+  //景點介紹圓圈
+  section.info-circles {
+    background-color: white;
+    padding: 2rem 1rem;
+
+    h3 {
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    div.circle-all {
+      //   border: 3px solid black;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      div.circle {
+        padding: 1rem;
+        // border: 3px solid red;
+        flex: 0 1 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          width: 80%;
+          border-radius: 50%;
+          transition: all 0.1 ease;
+          padding: 0.3rem;
+          &:hover {
+            border: 3px solid $themecolor;
+          }
+        }
+      }
     }
   }
 }
